@@ -24,7 +24,7 @@ public class Policy
        System.out.println("Please enter the Policyholder’s Smoking Status (smoker/non-smoker): ");
             String smokerStatus = scanner.nextLine();
 
-       
+        
         System.out.println("Please enter the Policyholder’s Height (in inches):  ");
              String height = scanner.nextLine();
 
