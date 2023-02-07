@@ -33,7 +33,7 @@ public class Policy
               String weight = scanner.nextLine();
 
         
-     
+     //Code is not fully Functional, I am understanding the concept of what its supposed to do but I am a little rusty, Learning more by the minute.
         
      
 System.out.println("Policy Number:"+policyNumber);
