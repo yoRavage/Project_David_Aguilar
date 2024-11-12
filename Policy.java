@@ -1,5 +1,9 @@
 import java.util.Scanner;
-
+/**
+ * The Policy class represents an insurance policy, and details about the policyholder
+ * Like their name, age, smoking status, height, weight, and policy number. 
+ * also methods for calculating the Body Mass Index (BMI) and price of the policy.
+ */
 public class Policy {
     private String policyNumber;
     private String providerName;
@@ -9,7 +13,9 @@ public class Policy {
     private String smokingStatus; 
     private double height; 
     private double weight; 
-
+  /**
+     * Default constructor that starts the Policy with default values.
+     */
     public Policy() {
         this.policyNumber = "";
         this.providerName = "";
@@ -20,7 +26,20 @@ public class Policy {
         this.height = 0;
         this.weight = 0;
     }
-
+ /**
+     * Parameterized constructor to create a Policy object with specified values.
+     * 
+     * @param policyNumber Unique identifier for the insurance policy.
+     * @param providerName Name of the insurance provider.
+     * @param firstName The first name of the policyholder.
+     * @param lastName The last name of the policyholder.
+     * @param age Age of the policyholder.
+     
+     * @param smokingStatus The smoking status of the policyholder
+     
+     * @param height Height of the policyholder in inches.
+     * @param weight Weight of the policyholder in pounds.
+     */
     public Policy(String policyNumber, String providerName, String firstName, String lastName,
                   int age, String smokingStatus, double height, double weight) {
         this.policyNumber = policyNumber;
@@ -34,6 +53,12 @@ public class Policy {
     }
 
     // Getters
+
+    /**
+     * Gets the policy number.
+     * 
+     * @return The policy number.
+     */
     public String getPolicyNumber() {
         return policyNumber;
     }
@@ -72,7 +97,11 @@ public class Policy {
         }
         return 0;
     }
-
+ /**
+     * Calculates the Insurance Policy price based on the policyholder's Age, Smoking Status, and BMI.
+     * 
+     * @return The calculated policy price.
+     */
     public double calculatePrice() {
         double baseFee = 600.0;
         double additionalFee = 0.0;
@@ -91,7 +120,9 @@ public class Policy {
 
         return baseFee + additionalFee;
     }
-
+ /**
+     * The main method that allows the user to input policyholder details and outputs the policy information.
+     */
     // Main method
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
