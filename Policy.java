@@ -1,9 +1,4 @@
 import java.util.Scanner;
-/**
- * The Policy class represents an insurance policy, and details about the policyholder
- * Like their name, age, smoking status, height, weight, and policy number. 
- * also methods for calculating the Body Mass Index (BMI) and price of the policy.
- */
 public class Policy {
     private String policyNumber;
     private String providerName;
@@ -26,20 +21,7 @@ public class Policy {
         this.height = 0;
         this.weight = 0;
     }
- /**
-     * Parameterized constructor to create a Policy object with specified values.
-     * 
-     * @param policyNumber Unique identifier for the insurance policy.
-     * @param providerName Name of the insurance provider.
-     * @param firstName The first name of the policyholder.
-     * @param lastName The last name of the policyholder.
-     * @param age Age of the policyholder.
-     
-     * @param smokingStatus The smoking status of the policyholder
-     
-     * @param height Height of the policyholder in inches.
-     * @param weight Weight of the policyholder in pounds.
-     */
+
     public Policy(String policyNumber, String providerName, String firstName, String lastName,
                   int age, String smokingStatus, double height, double weight) {
         this.policyNumber = policyNumber;
